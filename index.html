@@ -34,7 +34,7 @@ HBD yaa &#129395;&#129395;&#129395;</marquee>
 
 <script>
     function play() {//Link Audio Bisa Diganti
-    var audio = new Audio('');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
+    var audio = new Audio('/cepmek2.mp3');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
     
     //Pesan WhatsApp
      function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanya. ILOVE U TOO" + "%0A%0A" + "Btw makasih udah ngucapin ><";} 
@@ -43,7 +43,10 @@ HBD yaa &#129395;&#129395;&#129395;</marquee>
     <script type="text/javascript">            
                 var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
                 const swals = Swal.mixin({
-                    backdrop: 'rgba(0,0,0,0.0)', confirmButtonColor: '#2696FF', cancelButtonColor: '#800080', allowOutsideClick: false,
+                    backdrop: 'rgba(0,0,0,0.0)', 
+                    confirmButtonColor: '#2696FF', 
+                    cancelButtonColor: '#800080', 
+                    allowOutsideClick: false,
                 });
                 async function mulai(){          	
                     var { value: nama } = await swals.fire({
